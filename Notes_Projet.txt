@@ -1,0 +1,15 @@
+Notes pour le Projet :
+Besoin de :
+-Matrice à 2 dimensions, plate, pour plateau de jeu.
+-Fonctions pour attaque, défense, esquive, déplacements, compteurs de personnages.
+-Routines de tour pour joueur et IA.
+-Nombre et caractéristiques des personnages.
+-Travailler sur une IA.
+-Conditions de victoire.
+-Couleurs :
+#include <windows.h>
+void Color(int couleurDuTexte,int couleurDeFond) // fonction d'affichage de couleurs
+{
+        HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
+}
